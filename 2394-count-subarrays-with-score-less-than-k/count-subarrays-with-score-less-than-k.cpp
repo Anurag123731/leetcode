@@ -7,7 +7,7 @@ public:
         long long score;
         long long  sum=0;
         long long  ans=0;
-        while(i<n && j<n){
+        while( j<n){
             sum+=nums[j];
             score=sum*(j-i+1);
             while(i<=j && score>=k){
