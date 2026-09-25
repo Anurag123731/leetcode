@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int dp[1005][1005][2];
+    int dp[1005][105][2];
     int f(vector<int>prices,int i,int k,bool on){
         if(i==prices.size()) return 0;
         if (dp[i][k][on]!=-1) return dp[i][k][on];
